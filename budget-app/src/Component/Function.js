@@ -11,6 +11,7 @@ function Function(){
   
   return (
     <div className="Function">
+      <h1>React Assignment</h1>
       <label htmlFor="budget">Budget: </label>
       <input type='text' id="budget" onChange={(e)=>{setBudgets(e.target.value);dispatch(setBudget(e.target.value,expenses))}}/>&nbsp;&nbsp;
       <label htmlFor="expense">Expenses: </label>
