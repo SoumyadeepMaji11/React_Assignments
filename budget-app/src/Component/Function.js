@@ -11,9 +11,9 @@ function Function(){
   
   return (
     <div className="Function">
-      <label htmlFor="budget">Budget</label>
-      <input type='text' id="budget" onChange={(e)=>{setBudgets(e.target.value);dispatch(setBudget(e.target.value,expenses))}}/><br/>
-      <label htmlFor="expense">Expenses</label>
+      <label htmlFor="budget">Budget: </label>
+      <input type='text' id="budget" onChange={(e)=>{setBudgets(e.target.value);dispatch(setBudget(e.target.value,expenses))}}/>&nbsp;&nbsp;
+      <label htmlFor="expense">Expenses: </label>
       <input type='text' id='expense' onChange={(e)=>{setExpenses(e.target.value);dispatch(setBudget(budgets,e.target.value))}}/>
       <h2>Remaining Budget:{remaining}</h2>
     </div>
